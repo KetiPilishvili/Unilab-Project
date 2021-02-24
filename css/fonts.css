@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("../fonts/HelveticaLt.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/HelveticaLt.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/HelveticaLt.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/HelveticaLt.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/HelveticaLt.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/HelveticaLt.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/HelveticaLt.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
