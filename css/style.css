@@ -217,6 +217,7 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 50px;
 }
 .my-content {
     width: 30%;
@@ -273,17 +274,108 @@ header{
 .action{
 	display: flex;
 	flex-wrap: wrap;
-	background-color: red;
+	justify-content: space-between;
+}
+.left-action{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 60%;
+	height: 900px;
 }
 .first-bg{
 	background-image: url("../image/bridge.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
 	position: relative;
-	/*display: flex;
-	justify-content: flex-start;*/
+	display: flex;
+	justify-content: flex-start;
 	height: 430px;
-	width:60%;
+	width:100%;
+}
+.second-bg{
+	background-image: url("../image/wood.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	height: 430px;
+	width:100%;
+}
 
+/*here is text of background images*/
+.left-title{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	left: 35px;
+	top:40px;
+}
+ h6{
+	position: absolute;
+	font-weight: bold;
+	font-size: 24px;
+	text-transform: lowercase;
+	color: #fff;
+	left: 35px;
+	top:288px;
+}
+.city-text{
+	position: absolute;
+	font-size: 16px;
+	text-transform: lowercase;
+	color: #fff;
+	left: 35px;
+	top:322px;
+}
+.action-time{
+	display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 375px;
+    left: 35px;
+}
+.action-time p{
+	font-size: 13px;
+	color: #CBD0D3;
+
+}
+.action-icon{
+	color: #CBD0D3;
+	margin-right: 10px;
+}
+
+
+
+/*done*/
+
+/*right content*/
+.right-action{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.small-title-box+p{
+	font-weight: bold;
+	font-size: 16px;
+	color: #202124;
+	margin-top: 20px;
+	font-family: Acumin Pro;
+
+}
+.small-icon{
+	color: #A6ADB4;
+}
+.small-time p{
+	font-size: 13px;
+	color: #A6ADB4;
+	margin-left: 10px;
+}
+.small-time{
+	display: flex;
+    flex-direction: row;
+    margin-top: 10px;
 }
