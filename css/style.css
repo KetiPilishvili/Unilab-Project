@@ -5,6 +5,14 @@
 .d-flex{
 display: flex;
 }
+.container {
+	max-width: 1098px;
+    width: 100%;
+    margin: 0 auto;
+}
+body{
+	background-color: #F6F8F9;
+}
 
 /*header*/
 
@@ -116,14 +124,16 @@ header{
 /*right content*/
 .more-news{
 	height: 600px;
-	width: 40%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;}
+	justify-content: flex-start;
+	background-color: #fff;
+	width: 40%;
+}
 .title-section{
 	display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     padding-top: 100px;
     border-bottom: 2px solid #A6ADB4;
@@ -177,11 +187,103 @@ header{
 	text-transform: lowercase;
 }
 .time{
-	    display: flex;
+	display: flex;
     flex-direction: row;
-    justify-content: flex-start
+    justify-content: flex-start;
 }
 .icon-time{
 	color: #A6ADB4;
 	margin-right: 10px;
+}
+
+
+
+/*second section part*/
+.wrapper-title{
+	display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.trending-title{
+	font-size: 24px;
+	font-family: "Helvetica-Light";
+	font-weight: bold;
+	color: #202124;
+	margin-bottom: 40px; 
+}
+.trending-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.my-content {
+    width: 30%;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #707070;
+}
+.my-content img{
+	width: 100%;
+}
+.my-content:hover {
+	transform: scale(1.1) ;
+	transition: transform .2s;
+	animation-timing-function: ease-in-out;
+
+}
+.text-space{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+
+}
+.content_name {
+   	padding: 40px 0 10px 40px;
+    font-size: 16px;
+    font-family: "Helvetica-Light";
+    color: #202124;
+    font-weight: bold;
+}
+.content-main-text{
+	padding: 10px 0 10px 40px;
+	font-size: 13px;
+	color: #A6ADB4;
+}
+.box-time{
+	display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 40px;
+}
+.box-time p{
+	font-size: 13px;
+	color: #A6ADB4;
+
+}
+.box-icon{
+	color: #A6ADB4;
+	margin-right: 10px;
+}
+
+
+/*action things*/
+
+.action{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: red;
+}
+.first-bg{
+	background-image: url("../image/bridge.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	/*display: flex;
+	justify-content: flex-start;*/
+	height: 430px;
+	width:60%;
+
 }
