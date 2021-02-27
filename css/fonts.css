@@ -13,11 +13,11 @@
 
 @font-face {
   font-family: "Acumin-RPro";
-  src: url("../Acumin-RPro.eot");
-  src: url("../Acumin-RPro.eot?#iefix") format('embedded-opentype'),
-       url("../Acumin-RPro.otf") format('otf'),
-       url("../Acumin-RPro.svg#Acumin-RPro") format('svg'),
-       url("../Acumin-RPro.ttf") format('truetype'),
-       url"../Acumin-RPro.woff") format('woff'),
-       url("../Acumin-RPro.woff2") format('woff2');
+  src: url("../fonts/Acumin-RPro.eot");
+  src: url("../fonts/Acumin-RPro.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/Acumin-RPro.otf") format('otf'),
+       url("../fonts/Acumin-RPro.svg#Acumin-RPro") format('svg'),
+       url("../fonts/Acumin-RPro.ttf") format('truetype'),
+       url("../fonts/Acumin-RPro.woff") format('woff'),
+       url("../fonts/Acumin-RPro.woff2") format('woff2');
 }
