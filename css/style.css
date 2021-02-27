@@ -20,15 +20,14 @@ header{
 	background-color: #F6F8F9;
 	height: 50px;
 	display: flex;
-	    justify-content: space-between;
+	justify-content: space-between;
     align-items: center;
 }
-
 .page_logo{
-	 display: flex;
+	display: flex;
     justify-content: flex-end;
     align-items: center;
-        margin-left: 20px;
+    margin-left: 20px;
 }
 .nav-bar{
 	display: flex;
@@ -46,9 +45,18 @@ header{
 	text-transform: uppercase;
 	opacity: 50%;
 }
-.nav-a a:first-child{
+.nav-a a:hover{
 	opacity: 100%;
-	
+}
+.nav-active a{
+	color: #343638;
+	font-size: 11px;
+	font-family: "Helvetica-Light";
+	text-transform: uppercase;
+	opacity: 100%;
+}
+.nav-active a:hover{
+	opacity: 50%;
 }
 #user-image{
 	width: 40px;
@@ -66,6 +74,7 @@ header{
 	margin-left: 40px;
 }
 
+
 /*here is my first section*/
 
 /*left content*/
@@ -81,7 +90,6 @@ header{
 	position: relative;
 	display: flex;
 	justify-content: flex-start;
-/*	float: left;*/
 	height: 600px;
 	width:60%;
 }
@@ -100,6 +108,7 @@ header{
 	font-size:16px;
     text-transform: lowercase;
 	padding-top: 10px;
+	font-family: "Helvetica-Light";
 }
 .absolute-content button{
 	background-color: #FA6980;
@@ -116,6 +125,9 @@ header{
 .back-second-title{
     text-transform: lowercase;
     white-space: nowrap;
+    font-family: "Helvetica-Light";
+    font-size: 24px;
+    font-weight: bold;
     border-top: 2px solid #fff;
     margin-top: 40px;
     padding-top: 40px;
@@ -164,6 +176,7 @@ header{
 }
 .travel-content{
 	font-size: 16px;
+	font-family: "Helvetica-Light";
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -185,6 +198,7 @@ header{
 .travel-content p{
 	color: #A6ADB4;
 	text-transform: lowercase;
+	font-family: 'Acumin-RPro';
 }
 .time{
 	display: flex;
@@ -253,6 +267,8 @@ header{
 	padding: 10px 0 10px 40px;
 	font-size: 13px;
 	color: #A6ADB4;
+	font-family: 'Acumin-RPro';
+
 }
 .box-time{
 	display: flex;
@@ -359,12 +375,12 @@ header{
     flex-direction: column;
     justify-content: space-between;
 }
-.small-title-box+p{
+.box-title{
 	font-weight: bold;
 	font-size: 16px;
 	color: #202124;
 	margin-top: 20px;
-	font-family: Acumin Pro;
+	font-family: Acumin-RPro;
 
 }
 .small-icon{
@@ -401,14 +417,14 @@ header{
 .footer-right-components{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	flex-direction: row;
-	  width: 45%;
+	  width: 50%;
     padding-top: 56px;
 }
 .footer-left-components{
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	flex-direction: row;
 	width: 50%;
     padding-top: 56px;
@@ -434,9 +450,15 @@ header{
 	color:#CBD0D3;
 	text-transform: capitalize;
 }
+.list p:hover{
+	color: #fff;
+}
 .send-icon {
 	color: #Fff;
 	position: absolute;
+	margin:10px;
+	cursor: pointer;
+
 }
 .email-input img{
 	position: absolute;
@@ -451,10 +473,12 @@ header{
 	position: relative;
 	width: 263px;
 }
-
+#email:hover{
+	background-color: #fff;
+}
 .footer-text{
 	font-size: 11px;
-	color:  #fff;
+	color:  #CBD0D3;
 	margin-top: 16px;
 }
 ::placeholder {
@@ -480,7 +504,7 @@ header{
 	flex-wrap: wrap;
 }
 .head-of-the-articles{
-	   display: flex;
+	 display: flex;
     justify-content: space-between;
     margin: 44px 0;
 }
@@ -501,6 +525,9 @@ header{
 	cursor: pointer;
 	font-family: "Helvetica-Light";
 }
+.story:hover{
+	color: grey ;
+}
 .world-news-title{
 	color: #A6ADB4;
 	font-size: 11px;
@@ -508,6 +535,9 @@ header{
 	margin-left: 19px;
 	cursor: pointer;
 	font-family: "Helvetica-Light";
+}
+.world-news-title:hover{
+	color: #202124
 }
 .second_page-bg-img{
 	background-image: url("../image/desert.jpg");
@@ -570,6 +600,7 @@ header{
 	border:2px solid #EBEDED ;
 	width: 360px;
 	height: 40px;
+	color: #CBD0D3;
 }
 #text{
 	border-radius: 6px;
@@ -581,6 +612,7 @@ label{
 	color: #202124;
 	font-size: 13px;
 	font-weight: bold;
+	font-family: "Acumin-RPro";
 }
 .my-button{
 	background-color: #FA6980;
@@ -614,6 +646,7 @@ label{
 	color:#202124;
 	font-size: 24px;
 	font-weight: bold;
+	font-family: "Acumin-RPro";
 }
 .first-letter-space{
 	margin-top: 40px;
@@ -659,4 +692,7 @@ label{
 	margin-top: 40px;
 	border-bottom: 2px solid #EBEDED; 
 	margin-bottom: 160px;
+}
+.article-text p{
+	margin-bottom: 30px;
 }

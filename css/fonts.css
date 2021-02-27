@@ -10,3 +10,14 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Acumin-RPro";
+  src: url("../Acumin-RPro.eot");
+  src: url("../Acumin-RPro.eot?#iefix") format('embedded-opentype'),
+       url("../Acumin-RPro.otf") format('otf'),
+       url("../Acumin-RPro.svg#Acumin-RPro") format('svg'),
+       url("../Acumin-RPro.ttf") format('truetype'),
+       url"../Acumin-RPro.woff") format('woff'),
+       url("../Acumin-RPro.woff2") format('woff2');
+}
