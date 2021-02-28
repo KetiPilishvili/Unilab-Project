@@ -516,7 +516,7 @@
         display: block;
         width: 18px;
         height: 2px;
-        background: rgb(7, 7, 7);
+        background: black;
         margin-bottom: 4px;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
