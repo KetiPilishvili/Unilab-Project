@@ -8,7 +8,30 @@
 	.trending-box {
     justify-content: space-around;
    }
-	
+	.container {
+		width: 90%;
+		margin:0 auto;
+	}
+	.container2{
+		width: 90%;
+		margin:0 auto;
+	}
+}
+@media(max-width: 1020px){
+	.right-action{
+		width: 100%;
+		flex-direction: row;
+		margin-top: 40px;
+	}
+	.left-action{
+		width: 100%;
+	}
+	.small-title-box{
+		width: 45%;
+	}
+		.small-title-box3{
+		display: none;
+	}
 }
 @media(max-width: 950px){
 	.absolute-content p{
@@ -16,30 +39,15 @@
 	}
 }
 @media(max-width: 920px){
-	.trending-box{
+	/*.trending-box{
 		width: 90%;
 		margin:0 auto;
-	}
+	}*/
 	.wrapper-title{
 		width: 90%;
 	}
-	.left-action{
-		width: 90%;
-		margin:0 auto;
-	}
-	.small-title-box3{
-		display: none;
-	}
-	.small-title-box{
-		width: 40%;
-	}
-	.right-action{
-		width: 90%;
-		flex-direction: row;
-		margin:0 auto;
-		margin-top: 40px;
-	}
 }
+
 @media(max-width: 790px){
 	.bg-img{
 		width: 100%;
@@ -216,7 +224,7 @@
 
 /*footer responsive*/
 
-@media (max-width: 950px){
+@media (max-width: 1000px){
 	.my-page-footer{
 		height: 316px;
 	}
@@ -277,15 +285,64 @@
 	    margin: 0 auto;
 	    padding: 30px;	
 	}
+	  .article-text{
+   	    width: 90%;
+	    margin: 0 auto;
+	    padding-top: 40px;
+   }
 }
 @media(max-width: 1016px){
 	.home-items{
 		width: 35%;	
 	}
 }
+@media(max-width: 800px){
+	  .article-text{
+   	   display: none;
+   }
+   .article-box-for-ipad{
+	display: block;
+	}
+	.pagination{
+		display: flex;
+	    justify-content: space-around;
+	    width: 60%;
+	    align-items: center;
+	    margin: auto;
+	    padding: 50px;
+	    cursor: pointer;
+	    color: #A6ADB4;
+	}
+}
 @media(max-width: 650px){
 	.home-items{
 		width: 45%;
+	}
+}
+@media(max-width: 550px){
+	.pagination{
+		width: 80%;
+	}
+}
+@media(max-width: 500px){
+	.desert-content .second-title{
+		left: 15%;
+	}
+	.desert-title {
+		left: 25%;
+	}
+}
+@media(max-width: 450px){
+	.desert-content .second-title{
+		left: 10%;
+	}
+	.desert-title {
+		left: 20%;
+	}
+}
+@media(max-width: 360px){
+	.pagination{
+		width: 90%;
 	}
 }
 @media(max-width: 530px){
@@ -372,7 +429,4 @@
 	.letter{
 		height: 600px;
 	}
-	/*.time{
-	   	 margin-top: 40px;
-	}*/
 }

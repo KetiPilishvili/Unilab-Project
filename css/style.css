@@ -617,20 +617,22 @@ header{
     font-size: 32px;
     text-transform: uppercase;
     border-bottom: 2px solid #FA6980;
-    top: 155px;
-    left: 160px;
+   	left: 30%;
+    top: 20%;
 }
 .desert-content .second-title{
 	font-size: 16px;
 	text-transform: lowercase;
 	position: absolute;
-	left: 130px;
-	top: 223px;
+	transform: translate(10px, 50px);
+    left: 20%;
+    top: 30%;
 }
 .autor{
 	position: absolute;
-	left: 270px;
-	top: 305px;
+    transform: translate(10px, 50px);
+    left: 45%;
+    top: 45%;
 }
 
 .news-view{
@@ -733,7 +735,6 @@ label{
     justify-content: space-between;
     flex-direction: column;
     line-height: 1.6;
-
 }
 /*article section goes here*/
 
@@ -763,4 +764,34 @@ label{
 }
 .article-text p{
 	margin-bottom: 30px;
+}
+.article-box-for-ipad{
+	display: none;
+	width: 90%;
+	margin: 0 auto;
+}
+.article-box-for-ipad>p{
+	margin-top: 40px;
+	line-height: 1.6;
+	font-family: helvetica-light;
+}
+ .article-box-for-ipad .child{
+ 	font-size: 14px;
+ 	color: #A6ADB4;
+
+ }
+ .span-text{
+ 	color: #202124;
+ 	font-size: 16px;
+  	font-weight:oblique;
+ }
+ .pagination{
+ 	display: none;
+ }
+.another-color{
+	color: #202124;
+	border-bottom: 2px solid #FA6980;
+}
+.pagination-icon{
+	color: #202124;
 }
