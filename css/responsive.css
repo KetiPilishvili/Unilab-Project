@@ -133,16 +133,7 @@
 	.burger{
 		display: block;
 	}
-	/*.burger-icon{
-		display: flex;
-		align-items: flex-start;
-		justify-content: flex-start;
-	}*/
-	/*.page-logo{
-		justify-content: center;
-		align-items: center;
 
-	}*/
 	.right-content{
 		width: 30px;
 		margin-right: 0;
@@ -192,6 +183,19 @@
 	}
 	.left-action{
 		height: 642px;
+	}
+	.small-title-box3{
+		margin-bottom: 30px;
+	}
+	.travel-content{
+		padding-top: 20px;
+	}
+	.title-section{
+	    padding-bottom: 20px;
+    	padding-top: 30px;
+	}
+	.time{
+		margin-top: 20px;
 	}
 }
 @media(max-width: 450px){
@@ -261,6 +265,7 @@
 	.my-page-footer{
 		display: none;
 	}
+
 }
 
 
@@ -367,7 +372,7 @@
 	.letter{
 		height: 600px;
 	}
-	.time{
+	/*.time{
 	   	 margin-top: 40px;
-	}
+	}*/
 }
