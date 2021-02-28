@@ -6,7 +6,8 @@
 		margin-left: 40px;
 	}
 	.trending-box {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
    }
 	.container {
 		width: 90%;
@@ -20,7 +21,10 @@
 @media(max-width: 1020px){
 	.right-action{
 		width: 100%;
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 		margin-top: 40px;
 	}
 	.left-action{
@@ -60,7 +64,10 @@
 		padding-top: 40px;
 	}
 	.travelling{
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 		margin-left: 100px;
 	}
 
@@ -93,7 +100,10 @@
 }
 @media(max-width: 690px){
 	.travelling{
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	    width: 100%;
 	    margin-left: 0;
 	}
@@ -109,9 +119,16 @@
 		 margin-bottom: 40px;
 	}
 	.my-content:hover{
-		transform: scale(1) ;
+		-webkit-transform: scale(1) ;
+		    -ms-transform: scale(1) ;
+		        transform: scale(1) ;
+		-webkit-transition: -webkit-transform 0.1s;
+		transition: -webkit-transform 0.1s;
+		-o-transition: transform 0.1s;
 		transition: transform 0.1s;
-		animation-timing-function: ease-in-out;
+		transition: transform 0.1s, -webkit-transform 0.1s;
+		-webkit-animation-timing-function: ease-in-out;
+		        animation-timing-function: ease-in-out;
 	}
 	.my-content img{
 		height: 150px;
@@ -135,12 +152,10 @@
 	}
 }
 @media(max-width: 590px){
-	.nav-bar{
+	/*.nav-bar{
 		display: none;
-	}
-	.burger{
-		display: block;
-	}
+	}*/
+	
 
 	.right-content{
 		width: 30px;
@@ -151,8 +166,12 @@
 		height: 16px;
 	}
 	.left{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-	    justify-content: space-between;
+	    -webkit-box-pack: justify;
+	        -ms-flex-pack: justify;
+	            justify-content: space-between;
 	    width: 50%;
     	margin-left: 20px;
 	}
@@ -230,15 +249,20 @@
 	}
 	.container2{
 		width: 90%;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.footer-left-components{
 		width: 100%;
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}	
 	.footer-right-components{
 		width: 100%;
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}	
 	.social-space{
 		margin-top: 50px;
@@ -276,21 +300,8 @@
 
 }
 
-
 /*index2.html responsive*/
 
-@media(max-width: 1125px){
-	.head-of-the-articles{
-		width: 90%;
-	    margin: 0 auto;
-	    padding: 30px;	
-	}
-	  .article-text{
-   	    width: 90%;
-	    margin: 0 auto;
-	    padding-top: 40px;
-   }
-}
 @media(max-width: 1016px){
 	.home-items{
 		width: 35%;	
@@ -304,10 +315,15 @@
 	display: block;
 	}
 	.pagination{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-	    justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 	    width: 60%;
-	    align-items: center;
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
 	    margin: auto;
 	    padding: 50px;
 	    cursor: pointer;
@@ -360,10 +376,15 @@
 	.arrow-left{
 	display: block;
 	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	color: #A6ADB4;
 
 	}
 	.head-of-the-articles {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 	}
 }
 @media(max-width: 450px){
@@ -377,14 +398,14 @@
 	}
 }
 @media(max-width: 960px){
-	.news-view{
+	/*.news-view{
 		width: 90%;
    		 margin: auto;
-	}
+	}*/
 	.second_page-bg-img{
 		width: 100%;
   	  height: 400px;
-  	/*  background-size: auto;*/
+
 	}
 	.select-container{
 		width: 100%;
@@ -402,7 +423,8 @@
 	}
 	.first-info{
 		padding-top: 40px;
-	    justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
 	    margin: 0 auto;
 	    width: 90%;
 	}
@@ -413,11 +435,18 @@
     	height: 463px;
 	}
 	.letters{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	    width: 90%;
 	    margin: 0 auto;
-	    justify-content: space-between;
-	    flex-direction: row;
+	    -webkit-box-pack: justify;
+	        -ms-flex-pack: justify;
+	            justify-content: space-between;
+	    -webkit-box-orient: horizontal;
+	    -webkit-box-direction: normal;
+	        -ms-flex-direction: row;
+	            flex-direction: row;
 	}
 	.first-letter-space{
 		width: 45%;
@@ -428,7 +457,10 @@
 }
 @media(max-width: 580px){
 	.letters{
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.first-letter-space{
 		width: 90%;
@@ -442,4 +474,56 @@
 	.letter{
 		height: 600px;
 	}
+}
+
+/*side bar*/
+@media screen and (max-width:560px){
+    .navigation {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        z-index: 9;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+	.navigation {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.navigation> li {
+        display: block;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+    }
+    .navigation>li  {
+        color: #222;
+        padding: 100px 15px;
+        display: block;
+    }
+
+	.toggle-nav span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: rgb(7, 7, 7);
+        margin-bottom: 4px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .open-navigation  {
+        left: 0;
+    }
 }

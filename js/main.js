@@ -1,6 +1,6 @@
 
 // for username
-// http მოთხოვნა მიმართავს სერვისს რომელიც რანდომულად აგენერირებს მომხმარებელს 
+// http მომხმარებლის რანდომულად აგენერირება 
 $.ajax({
     url: 'https://randomuser.me/api/',
     dataType: 'json',
@@ -10,8 +10,6 @@ $.ajax({
     }
 });
 
-// ამ ფუნქციას გადაეცემა არგუმენტად სერვისის მიერ დაბრუნებული ობიექტი
-// ამავე ფუნქციაში ხდება გარკვეული ინფორმაციის ამოღება და html კომპონენტებზე განთავსება
 function showUserInfo(results) {
     var avatar = results["picture"]["medium"];
     var name = results["name"]["first"] + " " + results["name"]["last"];
@@ -31,7 +29,20 @@ function showUserInfo(results) {
     else { 
         $("#male").prop("checked", true);
     }
-
 }
 
+// side-bar
+if($('.toggle-nav').length > 0) {
+    $(".toggle-nav").on('click',function(e){
+        console.log("Hi");
+        event.stopPropagation();
+        $(".navigation").toggleClass("open-navigation");
+    })
+    $("body").on('click', function(){
+        $(".navigation").removeClass("open-navigation");
+    })
+    $(".pa-menu").on('click',function(){
+        event.stopPropagation();
+    })
+}
 
