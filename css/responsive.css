@@ -477,7 +477,7 @@
 }
 
 /*side bar*/
-@media screen and (max-width:560px){
+@media screen and (max-width:600px){
     .navigation {
         position: fixed;
         top: 0;
